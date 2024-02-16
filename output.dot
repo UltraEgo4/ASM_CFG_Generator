@@ -1,0 +1,38 @@
+digraph {
+    node[
+        shape=box,
+    ]
+    edge[
+        tailport=s,
+        headport=n,
+    ]
+    0 [ label = "\"0x405FE9 push rbx\n0x405FEA sub rsp,78h\n0x405FEE mov rcx,[fs:28h]\n0x405FF7 mov [rbp-18h],rcx\n0x405FFB xor ecx,ecx\n0x405FFD mov dword [rbp-40h],2\n0x406004 mov dword [rbp-3Ch],4\n0x40600B mov dword [rbp-38h],8\n0x406012 mov dword [rbp-34h],10h\n0x406019 mov dword [rbp-30h],20h\n0x406020 mov dword [rbp-2Ch],40h\n0x406027 mov dword [rbp-28h],80h\n0x40602E mov dword [rbp-24h],100h\n0x406035 mov dword [rbp-20h],200h\n0x40603C mov dword [rbp-1Ch],400h\n0x406043 lea rcx,[rbp-40h]\n0x406047 mov rax,rcx\n0x40604A mov edx,0Ah\n0x40604F lea rcx,[rbp-70h]\n0x406053 mov [rbp-68h],rcx\n0x406057 nop\n0x406058 nop\n0x406059 lea rcx,[rbp-70h]\n0x40605D mov rsi,rax\n0x406060 mov rdi,rdx\n0x406063 lea rax,[rbp-60h]\n0x406067 mov rdi,rax\n0x40606A call 00000000004061A4h\n0x40606F lea rax,[rbp-70h]\n0x406073 mov rdi,rax\n0x406076 call 00000000004063BAh\n0x40607B nop\n0x40607C lea rax,[rbp-60h]\n0x406080 mov rdi,rax\n0x406083 call 00000000004062B8h\n0x406088 mov [rbp-78h],rax\n0x40608C jmp short 00000000004060EDh\n\"" ]
+    1 [ label = "\"0x40608E lea rax,[rbp-78h]\n0x406092 mov rdi,rax\n0x406095 call 00000000004063A8h\n0x40609A mov eax,[rax]\n0x40609C lea ebx,[rax+rax]\n0x40609F lea rax,[rbp-78h]\n0x4060A3 mov rdi,rax\n0x4060A6 call 00000000004063A8h\n0x4060AB mov [rax],ebx\n0x4060AD lea rax,[rbp-78h]\n0x4060B1 mov rdi,rax\n0x4060B4 call 00000000004063A8h\n0x4060B9 mov eax,[rax]\n0x4060BB mov esi,eax\n0x4060BD lea rax,[rel 5CDAE0h]\n0x4060C4 mov rdi,rax\n0x4060C7 call 000000000047BB80h\n0x4060CC mov rdx,rax\n0x4060CF lea rax,[rel 565030h]\n0x4060D6 mov rsi,rax\n0x4060D9 mov rdi,rdx\n0x4060DC call 000000000047B670h\n0x4060E1 lea rax,[rbp-78h]\n0x4060E5 mov rdi,rax\n0x4060E8 call 0000000000406388h\n\"" ]
+    2 [ label = "\"0x4060ED lea rax,[rbp-60h]\n0x4060F1 mov rdi,rax\n0x4060F4 call 0000000000406300h\n0x4060F9 mov [rbp-70h],rax\n0x4060FD lea rdx,[rbp-70h]\n0x406101 lea rax,[rbp-78h]\n0x406105 mov rsi,rdx\n0x406108 mov rdi,rax\n0x40610B call 000000000040634Ch\n0x406110 test al,al\n0x406112 jne near 000000000040608Eh\n\"" ]
+    3 [ label = "\"0x406118 mov ebx,0\n0x40611D lea rax,[rbp-60h]\n0x406121 mov rdi,rax\n0x406124 call 0000000000406262h\n0x406129 mov eax,ebx\n0x40612B mov rdx,[rbp-18h]\n0x40612F sub rdx,[fs:28h]\n0x406138 je short 000000000040619Eh\n\"" ]
+    4 [ label = "\"0x40613A jmp short 0000000000406199h\n\"" ]
+    5 [ label = "\"0x40613C mov rbx,rax\n0x40613F lea rax,[rbp-70h]\n0x406143 mov rdi,rax\n0x406146 call 00000000004063BAh\n0x40614B nop\n0x40614C mov rax,rbx\n0x40614F mov rdx,[rbp-18h]\n0x406153 sub rdx,[fs:28h]\n0x40615C je short 0000000000406163h\n\"" ]
+    6 [ label = "\"0x40615E call 0000000000524DD0h\n\"" ]
+    7 [ label = "\"0x406163 mov rdi,rax\n0x406166 call 00000000004B8AB0h\n0x40616B mov rbx,rax\n0x40616E lea rax,[rbp-60h]\n0x406172 mov rdi,rax\n0x406175 call 0000000000406262h\n0x40617A mov rax,rbx\n0x40617D mov rdx,[rbp-18h]\n0x406181 sub rdx,[fs:28h]\n0x40618A je short 0000000000406191h\n\"" ]
+    8 [ label = "\"0x40618C call 0000000000524DD0h\n\"" ]
+    9 [ label = "\"0x406191 mov rdi,rax\n0x406194 call 00000000004B8AB0h\n\"" ]
+    10 [ label = "\"0x406199 call 0000000000524DD0h\n\"" ]
+    11 [ label = "\"0x40619E mov rbx,[rbp-8]\n0x4061A2 leave\n0x4061A3 ret\n\"" ]
+    0 -> 1 [ ]
+    1 -> 2 [ ]
+    2 -> 3 [ ]
+    3 -> 4 [ ]
+    4 -> 5 [ ]
+    5 -> 6 [ ]
+    6 -> 7 [ ]
+    7 -> 8 [ ]
+    8 -> 9 [ ]
+    9 -> 10 [ ]
+    10 -> 11 [ ]
+    0 -> 2 [ ]
+    2 -> 1 [ ]
+    3 -> 11 [ ]
+    4 -> 10 [ ]
+    5 -> 7 [ ]
+    7 -> 9 [ ]
+}
